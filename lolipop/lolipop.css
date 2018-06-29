@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+.wrapper{
+    background-color: #FDDEE3;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lolipop__candy{
+    width: 50px;
+    height: 50px;
+    background-color: #fca1aa;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 0 5px #a52443;
+}
+
+.lolipop__candy::after{
+    content: "";
+    display: block;
+    width: 7px;
+    height: 12px;
+    transform: rotate(-50deg);
+    background-color: #ffffffab;
+    border-radius: 50%;
+    top: 3px;
+    right: 10px;
+    position: absolute;
+}
+
+.lolipop__candy__ring{
+    height: 2px;
+    width: 100%;
+    background-color: #facd78;
+    box-shadow: -3px 0px 0 3px #facd78, 
+    3px 0px 0 3px #facd78, 
+    -3px 0px 0 8px #a52443, 
+    3px 0px 0 8px #a52443;
+    border-radius: 10px;
+    position: absolute;    
+}
+
+.lolipop__stick{
+    width: 5px;
+    height: 100px;
+    background-color: #a52443;
+    margin: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
